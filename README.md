@@ -1,6 +1,19 @@
-# ERPClient
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+# ERP Client Application
+
+This project is an **ERP (Enterprise Resource Planning) Client** built with **Angular 17**. It serves as the frontend application for managing various business processes in an organized and efficient manner.
+
+---
+
+## Features
+
+- **User Authentication**: Secure login and session management.
+- **Dashboard**: An overview of system metrics and key data points.
+- **Modular Design**: Extensible and maintainable architecture.
+- **Responsive UI**: Fully optimized for desktop and mobile devices.
+
+## Screenshots
+
 
 ## Development server
 
