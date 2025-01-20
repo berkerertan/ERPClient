@@ -7,7 +7,7 @@ import { UserModel } from '../models/user.model';
   providedIn: 'root'
 })
 export class AuthService {
-  token:string="";
+  token =localStorage.getItem("token");
   user:UserModel = new UserModel();
 
   constructor(private router:Router) { }
