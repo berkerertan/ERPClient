@@ -19,14 +19,21 @@ export const Menus: MenuModel[]=[
         icon:"fa",
         url:"",
         isTitle:false,
-        subMenus:[{
+        subMenus:[
+            {
             name:"Müşteriler",
             icon:"fas fa fa-users",
             url:"/customers",
             isTitle:false,
+            subMenus:[] 
+        },{
+            name:"Depolar",
+            icon:"fas fa fa-warehouse",
+            url:"/depots",
+            isTitle:false,
             subMenus:[]
-
-        }]
+        }
+    ]
     }
     // {
     //     name:"Admin",
