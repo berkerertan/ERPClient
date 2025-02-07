@@ -26,10 +26,18 @@ export const Menus: MenuModel[]=[
             url:"/customers",
             isTitle:false,
             subMenus:[] 
-        },{
+        },
+        {
             name:"Depolar",
             icon:"fas fa fa-warehouse",
             url:"/depots",
+            isTitle:false,
+            subMenus:[]
+        },
+        {
+            name:"Ürünler",
+            icon:"fas fa fa-boxes-stacked",
+            url:"/products",
             isTitle:false,
             subMenus:[]
         }
