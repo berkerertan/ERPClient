@@ -36,8 +36,15 @@ export const Menus: MenuModel[]=[
         },
         {
             name:"Ürünler",
-            icon:"fas fa fa-boxes-stacked",
+            icon:"fas fa fa-warehouse",
             url:"/products",
+            isTitle:false,
+            subMenus:[]
+        },
+        {
+            name:"Reçeteler",
+            icon:"fas fa fa-warehouse",
+            url:"/recipes",
             isTitle:false,
             subMenus:[]
         }
