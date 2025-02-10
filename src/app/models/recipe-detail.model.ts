@@ -1,8 +1,9 @@
-import { ProductModel } from "./product.model";
+import { ProductModel } from './product.model';
 
-export class RecipeDetailModel{
-    id:string="";
-    productId:string = "";
-    product:ProductModel=new ProductModel();
-    quantity:number=1;
+export class RecipeDetailModel {
+  id: string = '';
+  recipeId: string = '';
+  productId: string = '';
+  product: ProductModel = new ProductModel();
+  quantity: number = 1;
 }
