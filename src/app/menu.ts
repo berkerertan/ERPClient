@@ -49,6 +49,13 @@ export const Menus: MenuModel[]=[
             subMenus:[]
         }
     ]
+    },
+    {
+        name:"Siparişler",
+        icon:"fas fa-solid fa-clipboard-list",
+        url:"/orders",
+        isTitle:false,
+        subMenus:[]
     }
     // {
     //     name:"Admin",
