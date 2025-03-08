@@ -9,6 +9,7 @@ import { CustomerModel } from '../../models/customer.model';
 import { ProductModel } from '../../models/product.model';
 import { OrderDetailModel } from '../../models/order-detail.model';
 import { DatePipe } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-order',
@@ -78,7 +79,7 @@ constructor(
   }
 
   addUpdateDetail(){
-    const product = this.products.find(p=>p.id == this.createDetail.productId);
+    const product = this.products.find(p=>p.id == this.updateDetail.productId);
     if (product) {
       this.updateDetail.product=product;
     }

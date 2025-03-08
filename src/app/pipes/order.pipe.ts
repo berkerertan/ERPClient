@@ -16,7 +16,8 @@ export class OrderPipe implements PipeTransform {
             p.orderNumberYear.toString().includes(search) ||
             p.customer.name.toLocaleLowerCase().includes(search.toLocaleLowerCase()) ||
             p.date.includes(search) ||
-            p.deliveryDate.includes(search)
+            p.deliveryDate.includes(search) ||
+            p.status.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())
           );
         }
 

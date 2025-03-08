@@ -10,9 +10,13 @@ import { ProductsComponent } from './components/products/products.component';
 import { RecipesComponent } from './components/recipes/recipes.component';
 import { RecipeDetailsComponent } from './components/recipe-details/recipe-details.component';
 import { OrdersComponent } from './components/order/orders.component';
+import { RequirementsPlanningComponent } from './components/requirements-planning/requirements-planning.component';
 
 export const routes: Routes = [
     {path:"login", component:LoginComponent},
+    {
+        path:"requirements-planning/:orderId", component:RequirementsPlanningComponent
+    },
     {path:"",component:LayoutsComponent,canActivateChild:[()=>inject(AuthService).isAuthenticated],children:[
         {path:"",component:HomeComponent},
         {path:"customers",component:CustomersComponent},
@@ -20,9 +24,6 @@ export const routes: Routes = [
         {path:"products",component:ProductsComponent},
         {path:"recipes",component:RecipesComponent},
         {path:"recipe-details/:id",component:RecipeDetailsComponent},
-        {path:"orders",component:OrdersComponent},
-
-
-
+        {path:"orders",component:OrdersComponent}
     ]}
 ];

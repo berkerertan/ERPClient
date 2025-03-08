@@ -34,6 +34,10 @@
                             <td>{{data.deliveryDate | date: 'dd.MM.yyyy'}}</td>
                             <td>{{data.status.name}}</td>
                             <td>
+                                <a class="btn btn-outline-dark me-1" href="requirements-planning/{{data.id}}" target="_blank">
+                                    <i class="fa-solid fa-list"></i>
+                                    İhtiyaç planlaması çalıştır
+                                </a>
                                 <button data-toggle="modal" data-target="#updateModal" (click)="get(data)" class="btn btn-outline-primary btn-sm me-1">
                                     <i class="fa fa-edit"></i>
                                 </button>
@@ -248,7 +252,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @for (data of createModel.details; track data) {
+                                @for (data of updateModel.details; track data) {
                                 <tr>
                                     <td>{{$index + 1}}</td>
                                     <td>{{data.product.name}}</td>
